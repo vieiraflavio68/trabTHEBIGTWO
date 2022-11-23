@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+   <link rel="stylesheet" href="arq_css.css">
+    <script>
+        const controls = 
+        document.body(".control");
+        let currentItem = 0;
+        const items = 
+        document.querySelectorAll(".item");
+        const maxItems = items.length;
+
+        controls.forEach((control) => {
+        control.addEvenListener("click",() => {
+                const isLeft = control.classList.contains("arrow-left");
+
+
+        if (isLeft) {
+            currentItem -= 1; 
+        } else {
+            currentItem +=1;
+        }
+        if (currentItem >= maxItems) {
+            currentItem = 0;
+        }
+        if (currentItem < 0) {
+            currentItem = maxItems -1;
+        }
+        items.forEach(item => item.classList.remove('current-item'));
+        items[currentItem].scrollIntoView({
+            inline:"center"
+        })
+        items[currentItem].scrollIntoView({
+            inline: "center",
+            behavior:"smooth",
+            block:"nearest"
+
+        });
+        console.log("control clicked", isLeft, currentItem, maxItems);
+        });
+        });
+    </script>
+   <title>Arte</title>
+   <link rel="icon" href="iconpaginicial.png">
+
+</head>
+<body class="bd1">
+    <header class="headerbarra">
+        <div class="divtitulo">
+            <a id="a" href="TLOUpag1_trabalhodes_web.html">Início</a>
+            <a id="a" href="TLOUpag2_trabalhodes_web.html">Jogabilidade</a>
+            <a class="aleft" href="TRAB_HTML paginicial.html"><img id="vagalume" src="vagalumeimg2.png" alt="vagalume"></a>
+
+        </div>
+    </header>
+    <h1 id="hfirst">ARTE</h1>
+    <p class="pfirst">
+        Nessa parte falaremos como a arte mudou a maneira como a história do jogo foi contada e dirigida, falaremos dos 
+        concepts arts tanto dos personagens principais, dos inimigos, os zumbis e a paisagem. 
+    </p>
+
+    <header>
+        
+        <h1>
+            Personagens
+        </h1>
+        <p>
+            O jogo compõe diversos personagens incríveis, mas vamos focar nos principais, os que controlamos e aqueles que nos acompanham pelas dificuldades das duas longas
+            histórias.
+        </p>
+        <h2>
+            Personagens Principais
+        </h2>
+        <h3>
+            Jogáveis
+        </h3>
+        
+            
+        
+        <h4>
+            Joel
+        </h4>
+
+
+        <div class="project-img">
+            <img src="Joel_TLoU2pag3.png" alt="Joel TLOU2">
+        </div>
+        
+         
+        </div>
+    
+
+        <h4>
+            Ellie
+        </h4>
+
+    
+        <img src="Ellie_TLoU2.png.crdownload" alt="Ellie TLou 2">
+
+        <h4>
+            Abby 
+        </h4>
+        <img src="Abby_TLoU2.png" alt="Abby">
+
+    
+
+    </header>
+
+    <header>
+        <div>
+            <h1>
+                Inimigos
+            </h1>
+            <p>
+                Assim como os personagens, durante o jogo, os personagens principais enfrentam uma série de inimigos e outros grupos de sobreviventes que escolheram métodos diferentes,
+                vamos ver sobre eles.
+            </p>
+            <div>
+                <h1>
+                    Infectados
+                </h1>
+                <div>
+                    <h2>
+                        Runners
+                    </h2>
+                    <img src="corredoreszumbipag3.webp" alt="Runners">
+                    
+                    <p></p>
+
+                </div>
+                
+                <div>
+                    <h2>
+                        Stalkers
+                    </h2>
+                    <img src="Stalkerzumbipag3.webp" alt="">
+    
+                    <p></p>
+                </div>
+
+                <div>
+                    <h2>
+                        Clickers
+                    </h2>
+                    <img src="Clickerzumbipag3.webp" alt="">
+    
+                    <p></p>
+                </div>
+
+                <div>
+                    <h2>
+                        Shambler
+                    </h2>
+                    <img src="Shambler_Part_IIzumbipag3.webp.crdownload" alt="">
+    
+                    <p></p>
+                </div>
+
+                <div>
+                    <h2>
+                        Bloater
+                    </h2>
+                    <img src="Bloaterzumbipag3.webp.crdownload" alt="">
+    
+                    <p></p>
+                </div>
+
+                <div>
+                    <h2>
+                        Rat King
+                    </h2>
+                    <img src="Rat_King_Part2pag3.webp" alt="">
+                    <img src="Stalker_BloaterRatKingpag3.webp" alt="">
+    
+                    <p></p>
+                </div>
+
+
+                <p>
+                    Um fato curioso durante as produções da história e como a arte foi alterando isso é exatamente nos 
+                    concepts iniciais. Todos os infectados eram mulheres, isso porquê a ideia inicial era que a infecção
+                    só era transmitida para mulheres e a Ellie seria a única imune.
+                </p>
+                <p>
+                    Além dessa parte onde as mulheres estariam em perigo, havia a ideia de ter animais infectados, onde 
+                    na visita ao zoológico eles iriam encontrar um elefante infectado, que os perseguiria até ao longo do jogo. 
+                    Também contaria com a presença de um leão infectado no jogo. Essa idéia foi descartada pois assim como veremos 
+                    na parte de paisagem a natureza domina as cidades abandonadas e isso também signfica a liberdade dos animais.
+                </p>
+                <img src="zooscenetlou.jpg" alt="Cena zoológico">
+                <img src="lioninfectedconcept.jpg" alt="Ideia Leão infectado">
+                <p>
+                    E ai temos que falar sobre a principal coisa que remete a história, o Cordyceps.
+                </p>
+                <div>
+                    <h1>
+                        Infecção
+                    </h1>
+                    <img src="infeccaocordycepreal.jfif" alt="Cordyceps Real">
+                    <p>
+                        A infecção é causada pelo fungo Cordyceps, e ele não é fictício, porém felizmente para nós, ele apenas infecta 
+                        insetos e animais nesse tamanho. Porém no jogo, a infecção é ainda mais radical, e a maneira que uma espécie de super 
+                        fungo poderia mexer com o criativo dos criadores, fazendo vários níveis de estágios de infecção e deixando eles ainda 
+                        mais perigosos, brutais e assustadores. Quanto mais o tempo passa, mais o fungo se espalha pelo corpo do hospedeiro, e 
+                        tudo isso enquanto o infectado está vivo, quando morre o fungo se espalha em volta do corpo do agente e libera esporos 
+                        para espalhar os fungos. Ao final, em ambientes fechados onde há varios infectados e por muito tempo, se tornam lugares 
+                        que dá apenas para entrar usando mmáscaras de quarentena, não aquela normal usada por pessoas com gripe ou resfriado. Mas
+                        com máscaras ainda mais potentes.
+                    </p>
+                    <p>
+                        Mas a infecção fungica se espalhou consideravelmente rápida, porquê além de ir a mordidas ela infecta pelo ar. Mas apenas em 
+                        espaços fechados. E ainda mais, os estágios da infecção ocorrem de forma rápida, dependendo do hospedeiro. Tornando-os Runners 
+                        em minutos, horas ou dias. Pelo nível rápido de contágio, os militares agem de forma rápida e vemos suas ações no início do
+                        primeiro jogo.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1>
+                    Grupos
+                </h1>
+                <h2>
+                    Bandidos
+                </h2>
+                <h3>
+                    Canibais
+                </h3>
+                <h4>
+                    Vagalumes
+                </h4>
+            </div>
+            <div>
+                <h1>
+                    Concepts Arts
+                </h1>
+                <div class="containercarousel">
+                    <button class="arrow-right" aria-label="Next image">▶</button>
+                    <button class="arrow-left" aria-label="Pevious image">◀</button>
+                    <div class="imgpaisagem">
+                        <img src="ConceptEllie.jfif" alt="">
+                        <img src="ConceptEllie2.jpg" alt="">
+                        <img src="ConceptJoel1.jfif" alt="">
+                        <img class="itemcurrent-item"  src="ConceptJoel&Ellie.jfif" alt="">
+                        <img src="ConceptJoel&Ellie2.jfif" alt="">
+                        <img src="ConceptBandits.jfif" alt="">
+                        <img src="ConceptSoldiers.jfif" alt="">
+                        <img src="ConceptZumbi.jfif" alt="">
+                        <img src="ConceptZumbi2.jfif" alt="">
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <header>
+        <div>
+            <h1>
+                Paisagens
+            </h1>
+            <p>
+               Uma série de paisagens incríveis em um futuro distópico em que há poucos sobreviventes, uma série de cidades
+               destruídas na tentativa de parar a infecção mortal do Cordyceps, com erosões e efeitos da falta de cuidado das 
+               construções, a natureza tem seu espaço de novo, e mesmo que animais sejam comidos por infectados, eles não se 
+               transformam. A natureza destruída pela humanidade agora tem espaço de novo. Veja agora uma série de imagens e 
+               concepts de paisagens bonitas, além de espaços que os humanos conseguiram reconquistar.
+            </p>
+        </div>
+        <div class="containercarousel">
+            <button class="arrow-right control" aria-label="Next image">▶</button>
+            <button class="arrow-left control" aria-label="Pevious image">◀</button>
+            <div class="imgpaisagem">
+                <img class="item"  src="ConceptCidadeInundada.jpg" alt="">
+                <img class="item current-item"  src="ConceptElliePark.jpg" alt="">
+                <img class="item"  src="ConceptHunterCity.jpg" alt="">  
+                <img class="item"  src="ConceptJoelAtStore.jpg" alt="">
+                <img class="item"  src="ConceptMilitaryQuarentee.jpg" alt="">
+                <img class="item"  src="ConceptPaisagem.jfif" alt="">
+                <img class="item"  src="ConceptPaisagemCidade.jpg" alt="">
+                <img class="item"  src="ConceptPaisagemCidade2.jpg" alt="">
+                <img class="item"  src="ConceptPaisagemEllieCorvo.jpg" alt="">
+                <img class="item"  src="ConceptPaisagemHotel.jpg" alt="">
+                <img class="item"  src="ConceptPaisagemLagoVista.jpg" alt="">
+                <img class="item"  src="ConceptPaisagemponte.jpg" alt="">
+                <img class="item"  src="ConceptSchool.jpg" alt="">
+                <img class="item"  src="ConceptSchool2.jpg" alt="">
+                <img class="item"  src="ConceptPaisagemTunel.jpg" alt="">
+                <img class="item"  src="ConceptSchoolInside.jpg" alt="">
+                <img class="item"  src="ConceptShoppingMall.jpg" alt="">
+            </div>
+           
+        </div>
+    </header>
+    <h1>
+        Referências
+    </h1>
+    <p>
+        https://qph.cf2.quoracdn.net/main-qimg-c853bdd6eca1dbf3e874774d1ba190bd
+        https://i.imgur.com/mBx45wz.gif
+        https://thumbs.gfycat.com/DefiantInsidiousHarvestmouse-size_restricted.gif
+        https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/06/Alan.gif
+        https://thumbs.gfycat.com/UnfoldedDaringHoki-size_restricted.gif
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fthelastofus.fandom.com%2Fwiki%2FTools&psig=AOvVaw08SZq42tha0yKj7ZsaUbLR&ust=1669124263367000&source=images&cd=vfe&ved=2ahUKEwit39nHsr_7AhUBNTUKHZYPDfQQr4kDegUIARDGAQ
+        https://thelastofus.fandom.com/wiki/Crafting_materials
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fcriticalhits.com.br%2Fgames%2Fthe-last-of-us-parte-2-onde-encontrar-todas-as-bancadas-trofeu-preparada-para-o-pior%2F&psig=AOvVaw22T_64q61-GP0-jiqmUC0m&ust=1669131092756000&source=images&cd=vfe&ved=2ahUKEwjfyJqAzL_7AhX5qZUCHbhlB9IQr4kDegQIARAn
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.techtudo.com.br%2Fnoticias%2F2014%2F08%2Flast-us-remastered-como-melhorar-armas-e-equipamentos-usando-pecas.ghtml&psig=AOvVaw22T_64q61-GP0-jiqmUC0m&ust=1669131092756000&source=images&cd=vfe&ved=2ahUKEwjfyJqAzL_7AhX5qZUCHbhlB9IQr4kDegQIARAt
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.resetera.com%2Fthreads%2Fthe-last-of-us-part-ii-preview-thread.143340%2Fpage-12&psig=AOvVaw39IzJ9BYOta1Z7z6ZAD-Hb&ust=1669131638488000&source=images&cd=vfe&ved=2ahUKEwixubeEzr_7AhWYgpUCHRvEDecQr4kDegUIARDwAQ
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fthelastofus%2Fcomments%2Fcdi03a%2Folder_hud_interface_designs%2F&psig=AOvVaw3GNbM_18IDv1jIaS2V3UBL&ust=1669132224094000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOjSqOnQv_sCFQAAAAAdAAAAABAE
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fthelastofus.fandom.com%2Fwiki%2FSupplement&psig=AOvVaw3AIxfhciQKnRJfJaoMZ01Z&ust=1669133518351000&source=images&cd=vfe&ved=2ahUKEwigl-mE1b_7AhWfrpUCHVOuCeIQr4kDegQIARBE
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fthelastofus.fandom.com%2Fwiki%2FPart&psig=AOvVaw0j6h9NtXfFu1d0l-l_9sRh&ust=1669133533579000&source=images&cd=vfe&ved=2ahUKEwj8zIqM1b_7AhWKvJUCHaUMCaYQr4kDegUIARDJAQ
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gameblast.com.br%2F2020%2F06%2Fthe-last-of-us-part-ii-ps4-quia-de-trofeus.html&psig=AOvVaw1mTN6p24IpLOaScKfWQ1MI&ust=1669133641542000&source=images&cd=vfe&ved=2ahUKEwjElMi_1b_7AhWFjJUCHekYANYQr4kDegUIARDNAQ
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fviciados.net%2Fthe-last-of-us-2-tudo-o-que-voce-precisa-saber-antes-de-comprar-o-jogo%2F&psig=AOvVaw1mTN6p24IpLOaScKfWQ1MI&ust=1669133641542000&source=images&cd=vfe&ved=2ahUKEwjElMi_1b_7AhWFjJUCHekYANYQr4kDegUIARD4AQ
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fgamewith.net%2Fthe-last-of-us-2%2Farticle%2Fshow%2F19000&psig=AOvVaw1bACqmkVhJUgOj6KbP_lRe&ust=1669134307217000&source=images&cd=vfe&ved=2ahUKEwiO2_3817_7AhWQjJUCHf00BMgQr4kDegUIARDPAQ
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fthelastofus.fandom.com%2Fwiki%2FJoel_Miller&psig=AOvVaw0-JBOhZTAYe-3jDN1nEzY8&ust=1669135734114000&source=images&cd=vfe&ved=2ahUKEwj7zbCl3b_7AhWilZUCHeKfD2gQr4kDegUIARD8AQ
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FJoel_%2528The_Last_of_Us%2529&psig=AOvVaw1_uUztMkp5CerCL_SWqaXS&ust=1669135610134000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCKDLl9ndv_sCFQAAAAAdAAAAABAE
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Faminoapps.com%2Fc%2Fwalkers-apocalipse%2Fpage%2Fitem%2Fthe-last-of-us%2FRrZw_M58fvImN5MZd1oLgDmVnldGRkj35X&psig=AOvVaw1ZnLdx54ek-lN7ZAoowMly&ust=1669139953074000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCJDs54Ltv_sCFQAAAAAdAAAAABAE
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dlast%2BOf%2BUs&psig=AOvVaw1YNSNQhZGHDVBT4NkLjbcQ&ust=1669150594364000&source=images&cd=vfe&ved=2ahUKEwjpn6bTlMD7AhXtppUCHdibDWoQr4kDegUIARCTAg
+        https://pin.it/72tLDS7
+        https://conceptartworld.com/news/the-last-of-us-concept-art/
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallup.net%2Fthe-last-of-us-concept-art-video-games-10%2F&psig=AOvVaw2M169uFEu1f61yXLG4lhN5&ust=1669153059464000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCOCFvuudwPsCFQAAAAAdAAAAABAc
+    </p>
+
+    
+
+
+    <img id="imgfinalpag" class="imgfinalpag"src="vagalumeimg.png" alt="vagalumes2">
+
+
+  
+</body>
+</html>

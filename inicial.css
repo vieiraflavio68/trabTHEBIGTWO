@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 3000px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height:200px;
+    padding:20px 0;
+}
+
+.logo {
+width: 25%;
+background-color: #6d1e12;
+
+}
+.kratos {
+    width: 50%;
+    margin-top: 11%;
+}
+.menu {
+    padding-top:30px;
+    padding-bottom:25px;
+    width: 110%;
+    text-align: right;
+    background-color: #6d1e12;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    
+}
+
+section.sobre {
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras {
+    position: absolute;
+    bottom:-450px;
+    right:-500px;
+    width:1000px;
+    height:1030px;
+    border-radius: 50%;
+    background-color: #6d1e12;
+}
+
+img {
+    position: absolute;
+ 
+}
+
+.p1{
+    margin:20px 0;
+    color: rgb(255, 255, 255);
+    font-size:25px;
+    max-width: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto-sobre h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+body {
+    background-color: black;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    background-color: #461008;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.credito2 {
+    color: grey;
+}
